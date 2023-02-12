@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center font-semibold mt-12">Let's get some <span class="text-indigo-600 font-bold">Mooooooony</span> !!!</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto p-8">
+                <div class="bg-lime-400	 p-6 rounded-lg text-stone-50">
+                    <h4 class="text-2xl ">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="depositTotal">00</span> </h2>
+                </div>
+                <div class="bg-slate-400 p-6 rounded-lg text-stone-50">
+                    <h4 class="text-2xl">Withdrow</h4>
+                    <h2 class="text-5xl">$<span id="WithdrowTotal" >00</span></h2>
+                </div>
+                <div class="bg-red-300 p-6 rounded-lg text-stone-50">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl">$<span id="totalBalance" >1240 </span></h2>
+                </div>            
+            </div>
+        </section>
+        <section class="mt-1">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto p-8">
+                <div class="bg-cyan-500	 p-6 rounded-lg ">
+                    <h4 class="text-2xl text-stone-50">Please Deposit</h4>
+                  
+                        <input class="w-9/12 block px-2 my-2" id="user-Deposit" type="text" placeholder="$ Amount you want to Deposit">
+                        
+                        <button class="bg-blue-600 text-slate-100 px-5 py-1 mt-3 rounded-lg hover:bg-blue-900" id="Deposit">Deposit</button>                      
+                </div>
+               
+                <div class="bg-pink-500 p-6 rounded-lg ">
+                    <h4 class="text-2xl text-stone-50">Please Withdraw</h4>
+                 
+                        <input class="w-9/12 block px-2 my-2" id="user-Withdrow" type="text" placeholder="$ Amount you want to Withdrow">
+                        
+                        <button class="bg-blue-600 text-slate-100 px-5 py-1 mt-3 rounded-lg hover:bg-blue-900" id="btn-Withdrow">Withdraw</button>                      
+                </div>            
+            </div>
+        </section>
+    </main> 
+    <script src="bank.js"></script>   
+    <script src="withdrow.js"></script>
+</body>
+</html>
